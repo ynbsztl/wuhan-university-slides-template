@@ -1,0 +1,166 @@
+\documentclass[xcolor=dvipsnames,envcountsect,9pt]{beamer}
+%\documentclass[xcolor=dvipsnames,envcountsect,9pt,draft]{beamer}
+%-------- theme --------
+\usetheme{Boadilla}
+
+%-------- color --------
+\definecolor{whu}{RGB}{0,37,84}
+\definecolor{crimsonred}{RGB}{17,87,64} % Official RGB code for Crimson Red
+\usecolortheme[named=crimsonred]{structure}
+%-------- set color of 'example block' to crimson theme --------
+\setbeamercolor{block body example}{bg=white}
+\setbeamercolor{block title example}{fg=white}
+
+%-------- font --------
+\setbeamerfont{structure}{family=\rmfamily,series=\bfseries}
+\usefonttheme[stillsansseriftext]{structurebold}
+\setbeamerfont{section in head/foot}{size=\tiny}
+%\renewcommand{\familydefault}{\rmdefault}
+%\renewcommand{\familydefault}{\sfdefault}
+\renewcommand{\familydefault}{\ttdefault}
+
+%-------- misc structure --------
+\useoutertheme[footline=authortitle,subsection=false]{miniframes}
+\useinnertheme{rounded}
+\addtobeamertemplate{block begin}{}{\justifying}
+\newtheorem{remark}[theorem]{Remark}
+\renewcommand{\indent}{\hspace*{2em}}
+\setbeamertemplate{theorems}[numbered]
+\setbeamertemplate{caption}[numbered]
+\usepackage[justification=centering]{caption}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+%-------- packages to be used -------
+\usepackage{amsmath,amsfonts,amssymb,amscd,amsthm}
+\usepackage{graphicx,xcolor,comment}
+\usepackage{mathrsfs} 
+\usepackage{multirow}
+\usepackage{calligra}
+\usepackage{array}
+\usepackage{stata}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\usepackage{caption}
+\usepackage[english]{babel}
+\usepackage{rotating}
+\usepackage{enumerate}
+\usepackage{tikz}
+\usepackage{bm}
+\usepackage{csquotes}
+\usepackage{lipsum}
+\usepackage{zhlipsum}
+\usepackage{ctex}
+%-------- for bibliography -----------------
+
+
+\usepackage{natbib}
+\setcitestyle{authoryear,round}
+\bibliographystyle{apalike}
+
+
+%-------- WMSU Backgound -------------------
+\usebackgroundtemplate{%
+	\tikz[overlay,remember picture] \node[opacity=1, at=(current page.south east), shift={(-0.8cm,1cm)}] {
+		\includegraphics[height=0.5in,width=0.5in]{./Figures/WMSU LOGO.png}};
+}
+
+
+%----------▲▲▲▲▲ PREAMBLE END ▲▲▲▲▲----------
+%------------------------------------------------
+%------------------------------------------------
+%------------------------------------------------
+%------------------------------------------------
+%------------------------------------------------
+
+%---------START EDITING HERE---------------------
+\title[Disease Control and Inequality Reduction: Evidence from a Tuberculosis Testing and Vaccination Campaign]{Disease Control and Inequality Reduction: Evidence from a Tuberculosis Testing and Vaccination Campaign}
+
+
+
+\author [Reporter: T. Zhang]{\textbf{Aline B$\ddot{\texttt{u}}$tikofer$^a$, Kjell G. Salvanes$^a$ }}
+
+\institute[Department of Economics, Norwegian School of Economics, Bergen] {\emph{}\\{$^a$Department of Economics, Norwegian School of Economics, Bergen\\
+		\vspace{0.2cm}
+		\textrm{Review of Economic Studies (2020) \textbf{87}, 2087–2125}\\
+		\vspace{0.2cm}
+\textrm{First version received December 2015; Editorial decision March 2019; Accepted 2020}\\
+\vspace{0.2cm}
+\textbf{\textit{Reporter: Tianelei Zhang}}\\
+
+	}
+
+%\vspace{0.7cm}
+
+
+
+%\includegraphics[scale=0.1]{./Figures/WMSU CSM DMS.png}
+}
+
+\date[\today]{\footnotesize \textbf{\today}}
+
+%--------- START DOCUMENT ------------------
+\begin{document}
+	\begin{frame}
+		\titlepage
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{This is title}
+\framesubtitle{This is subtitle}
+cd “dir”
+
+git init // 初始化
+
+git status 
+
+git add slides.tex 
+
+Git add .   // 管理文件夹下的所有文件
+
+git commit -m ‘version1’ //单引号内的内容自己写，也就是描述这个版本名字
+
+git log
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%----------- REFERENCES  -------------
+%----------- No editing in references section ----------
+%----------- edit only in References.bib ----------
+
+\begin{frame}[t, allowframebreaks]
+	\frametitle{References}
+	\tiny
+	\bibliography{literature}
+\end{frame}
+
+
+
+
+
+
+%--------- THANK YOU Text --------------------------
+\begin{frame}
+    \begin{center}
+        {\Huge\calligra\color{crimsonred} Thanks!}
+    \end{center}
+\end{frame}
+%----------------------------------------------------
+\end{document}
