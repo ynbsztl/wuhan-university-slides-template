@@ -1,1 +1,1 @@
-# wuhan-university-slides-template
+# wuhan-university-slides-template# whu-slide-template
